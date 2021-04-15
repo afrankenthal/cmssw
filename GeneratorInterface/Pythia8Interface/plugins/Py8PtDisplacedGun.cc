@@ -52,8 +52,6 @@ Py8PtDisplacedGun::Py8PtDisplacedGun( edm::ParameterSet const& ps )
    fMakeDisplaced = pgun_params.getParameter<bool>("MakeDisplaced"); //, true);
    fCustomCollimation = pgun_params.getParameter<bool>("CustomCollimation"); //, false);
 
-   std::cout << "Current seed: " << randomEngine().getSeed() << std::endl;
-
 }
 
 bool Py8PtDisplacedGun::generatePartonsAndHadronize()
